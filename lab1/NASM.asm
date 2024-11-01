@@ -1,11 +1,11 @@
 %include "io.inc"
 
-section .data
-    input db 256 dup(0)
-    crc_table dd 256 dup(0)
+section .rodata
     format db "CRC32: ", 0
 
 section .bss
+    input resb 256
+    crc_table resd 256
     crc resd 1
     i resd 1
     j resd 1

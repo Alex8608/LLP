@@ -16,7 +16,7 @@ int main() {
         crc_table[i] = crc;
     }
 
-    printf("Введите строку: ");
+    printf("Enter the string: ");
     fgets((char *)input, sizeof(input), stdin);
     size_t len = strlen((char *)input);
     

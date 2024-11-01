@@ -34,7 +34,6 @@ compute_crc:
     goto generate_crc_table;
 
 input_str:
-    printf("Введите строку: ");
     fgets((char *)input, sizeof(input), stdin);
     size_t len = strlen((char *)input);
     
