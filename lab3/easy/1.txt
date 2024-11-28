@@ -1,0 +1,12 @@
+easy.cpp.obj    _ZSt5truncf
+easy.cpp.obj    access1
+easy.cpp.obj    access2
+easy.cpp.obj    access3
+easy.cpp.obj    _ZSt3sinIiEN9__gnu_cxx11__enable_ifIXsrSt12__is_integerIT_E7__valueEdE6__typeES3_
+easy.cpp.obj    access4
+easy.cpp.obj    access8
+easy.cpp.obj    _ZSt5floorIiEN9__gnu_cxx11__enable_ifIXsrSt12__is_integerIT_E7__valueEdE6__typeES3_
+easy.cpp.obj    access7
+easy.cpp.obj    _ZSt3sinIxEN9__gnu_cxx11__enable_ifIXsrSt12__is_integerIT_E7__valueEdE6__typeES3_
+easy.cpp.obj    access6
+easy.cpp.obj    access5
