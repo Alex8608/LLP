@@ -11,11 +11,11 @@ section .text
 
 ;namespace var7 { 
 ;struct S { 
-;   int16 s1;  
-;   int16 s2;         
+;   short s1;  
+;   short s2;         
 ;   float s3;      
 ;}; 
-;extern "C" void access7(int16 a, bool b, S c){
+;extern "C" void access7(short a, bool b, S c){
 ;    if (( ( (float)c.s2 || (c.s1 << 16) ) == c.s3 ) && b>a){
 ;       puts("Access granted");
 ;       return;
@@ -25,9 +25,10 @@ section .text
 ;}
 
 main:
-    push rbp
-    mov rbp, rsp
-    sub rsp, 32
+    push rbp 
+    push rsi
+    mov rbp, rsp 
+    sub rsp, 40
     
     lea r8, [a]
     mov dl, 1
@@ -35,6 +36,8 @@ main:
     
     call access7 
            
-    leave
     xor rax, rax
+    mov rsp, rbp
+    pop rsi 
+    pop rbp
     ret

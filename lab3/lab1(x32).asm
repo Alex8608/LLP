@@ -8,17 +8,16 @@ section .text
     extern printf, scanf, malloc, free
 
 main:
-        
+    push esi    
     push ebp
     mov ebp, esp
-    sub esp, 32
     
     push string
     push string_format
-    call printf
+    call printf 
     add esp, 8
     
-    push 257
+    push 4096
     call malloc
     add esp, 4
     mov esi, eax
@@ -68,4 +67,5 @@ finalize_crc:
     xor eax, eax
     mov esp, ebp
     pop ebp
+    pop esi
     ret

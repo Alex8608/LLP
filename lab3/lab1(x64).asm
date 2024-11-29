@@ -7,11 +7,11 @@ section .text
     global main
     extern printf, scanf, malloc, free
 
-main:
+main: ; +8 
     push rsi
     push rbp
     mov rbp, rsp
-    sub rsp, 32
+    sub rsp, 40
     
     lea rcx, [string]
     call printf
